@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://blocrwtkcwt0y"]
+
+[ext_resource type="Texture2D" uid="uid://k1oc42rnpafw" path="res://title_options.png" id="1_o1yut"]
+
+[node name="TitleOptions" type="Node"]
+
+[node name="Options" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_o1yut")
+metadata/_edit_group_ = true
+
+[node name="DensityDecBtn" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 28.0
+offset_right = 72.0
+offset_bottom = 40.0
+focus_mode = 0
+flat = true
+
+[node name="DensityIncBtn" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 28.0
+offset_right = 101.0
+offset_bottom = 40.0
+focus_mode = 0
+flat = true
+
+[node name="DurationDecBtn" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 72.0
+offset_right = 72.0
+offset_bottom = 84.0
+focus_mode = 0
+flat = true
+
+[node name="DurationIncBtn" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 72.0
+offset_right = 101.0
+offset_bottom = 84.0
+focus_mode = 0
+flat = true
+
+[node name="StartButton" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 91.0
+offset_right = 104.0
+offset_bottom = 109.0
+focus_mode = 0
+flat = true

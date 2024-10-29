@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://diu1wkv235qr8"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_6qoo8"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_6qoo8")
+
+[node name="StepTimer" type="Timer" parent="."]
+wait_time = 0.7
+
+[connection signal="pause_clicked" from="." to="." method="_on_pause_clicked"]
+[connection signal="timeout" from="StepTimer" to="." method="_on_timer_timeout"]

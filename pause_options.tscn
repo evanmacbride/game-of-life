@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf7svky2shfal"]
+
+[ext_resource type="Texture2D" uid="uid://cx7udcvwsgxwf" path="res://pause_options.png" id="1_261hk"]
+
+[node name="PauseOptions" type="Node"]
+
+[node name="Options" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_261hk")
+
+[node name="DensityDecBtn" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 28.0
+offset_right = 72.0
+offset_bottom = 40.0
+focus_mode = 0
+flat = true
+
+[node name="DensityIncBtn" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 28.0
+offset_right = 101.0
+offset_bottom = 40.0
+focus_mode = 0
+flat = true
+
+[node name="DurationDecBtn" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 72.0
+offset_right = 72.0
+offset_bottom = 84.0
+focus_mode = 0
+flat = true
+
+[node name="DurationIncBtn" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 72.0
+offset_right = 101.0
+offset_bottom = 84.0
+focus_mode = 0
+flat = true
+
+[node name="RestartButton" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 94.0
+offset_right = 112.0
+offset_bottom = 106.0
+focus_mode = 0
+flat = true
+
+[node name="ContinueButton" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 116.0
+offset_right = 116.0
+offset_bottom = 128.0
+focus_mode = 0
+flat = true

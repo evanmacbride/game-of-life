@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbvs0g84bv18j"]
+
+[ext_resource type="Script" path="res://cell.gd" id="1_3tt07"]
+[ext_resource type="Texture2D" uid="uid://chw1fs5q15vsh" path="res://tile.png" id="2_aa77j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ordcu"]
+size = Vector2(8, 8)
+
+[node name="Cell" type="Area2D"]
+script = ExtResource("1_3tt07")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_ordcu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 4)
+texture = ExtResource("2_aa77j")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

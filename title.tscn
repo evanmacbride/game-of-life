@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://boxocpt61reo5"]
+
+[ext_resource type="Texture2D" uid="uid://dlnyam1hb2dly" path="res://title.png" id="1_0klkv"]
+
+[node name="Title" type="Node"]
+
+[node name="Screen" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="Screen"]
+offset_right = 160.0
+offset_bottom = 144.0
+color = Color(0.454902, 0.337255, 0.607843, 1)
+
+[node name="TitleContainer" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_0klkv")
+
+[node name="StartButton" type="Button" parent="TitleContainer"]
+layout_mode = 2
+offset_left = 56.0
+offset_top = 72.0
+offset_right = 104.0
+offset_bottom = 88.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 8
+flat = true
+
+[node name="OptionsButton" type="Button" parent="TitleContainer"]
+layout_mode = 2
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 112.0
+offset_bottom = 112.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 8
+flat = true
